@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Get In Touch | Helleaux Labs Photography</title>
+  <meta name="description" content="Contact Helleaux Labs for photography inquiries. Located in NYC Creative District. Call (123) 456-7890 or email info@helleauxlabs.com for bookings." />
+  <meta name="keywords" content="contact photographer, photography inquiry, book session, NYC photographer contact, studio location, photography consultation" />
+  <meta property="og:title" content="Contact Helleaux Labs Photography" />
+  <meta property="og:description" content="Get in touch with our professional photography team for bookings and inquiries." />
+  <link rel="canonical" href="https://helleauxlabs.com/contact.html" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <h1 class="logo">Helleaux<span>Labs</span></h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="booking.html">Booking</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <p>Have questions or want to discuss a custom photography project? Reach out to us using the contact information below.</p>
+    </div>
+  </section>
+  <section class="contact-main">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <div class="contact-detail">
+          <span class="icon">📍</span>
+          <div>
+            <strong>Studio Address</strong><br>
+            123 Photography Lane<br>
+            Creative District, NY 10001
+          </div>
+        </div>
+        <div class="contact-detail">
+          <span class="icon">📞</span>
+          <div>
+            <strong>Phone Number</strong><br>
+            (123) 456-7890
+          </div>
+        </div>
+        <div class="contact-detail">
+          <span class="icon">✉️</span>
+          <div>
+            <strong>Email Address</strong><br>
+            info@helleauxlabs.com
+          </div>
+        </div>
+        <div class="contact-detail">
+          <span class="icon">⏰</span>
+          <div>
+            <strong>Business Hours</strong><br>
+            Monday - Friday: 9am - 6pm<br>
+            Saturday: 10am - 4pm<br>
+            Sunday: Closed
+          </div>
+        </div>
+        <div class="contact-social">
+          <span>Follow Us</span>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"> <span class="icon">&#x1F4F7;</span> </a>
+            <a href="#" aria-label="Facebook"> <span class="icon">&#x1F426;</span> </a>
+            <a href="#" aria-label="Twitter"> <span class="icon">&#x1F426;</span> </a>
+            <a href="#" aria-label="LinkedIn"> <span class="icon">&#x1F465;</span> </a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <form action="#" method="POST" onsubmit="handleFormSubmit(event)">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="What is your message about?" required>
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help you" required></textarea>
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+        <script>
+          function handleFormSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for your message! We will get back to you within 24 hours.');
+            event.target.reset();
+          }
+        </script>
+      </div>
+    </div>
+  </section>
+  <section class="map-section">
+    <div class="container">
+      <iframe src="https://www.google.com/maps?q=Union+Square,+New+York,+NY+10003&output=embed" width="100%" height="350" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+  <footer>
+    <div class="container footer">
+      <div class="footer-about">
+        <h3>Helleaux<span>Labs</span></h3>
+        <p>Professional photography services capturing life's most memorable moments with artistic precision and technical excellence.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="booking.html">Booking</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Info</h4>
+        <p>123 Photography Lane<br>Creative District, NY 10001</p>
+        <p>(123) 456-7890</p>
+        <p>info@helleauxlabs.com</p>
+      </div>
+    </div>
+    <div class="container copyright">
+      <p>&copy; 2025 Helleaux Labs. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Photography Services & Packages | Studio Time & Music Beats | Helleaux Labs</title>
+  <meta name="description" content="Explore our photography packages, studio rental, mixing & mastering services, and exclusive music beats store. Professional rates starting at $150." />
+  <meta name="keywords" content="photography packages, studio rental, mixing mastering, music beats, photo session pricing, professional photography services" />
+  <meta property="og:title" content="Photography Services & Studio Rental - Helleaux Labs" />
+  <meta property="og:description" content="Professional photography packages and studio services with competitive pricing and premium quality." />
+  <link rel="canonical" href="https://helleauxlabs.com/services.html" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="container nav">
+      <h1 class="logo">Helleaux<span>Labs</span></h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="booking.html">Booking</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Services Hero Section -->
+  <section class="hero services-hero">
+    <div class="container">
+      <h2>Our Studio & Music Services</h2>
+      <p>Explore our creative packages, studio time, mixing/mastering, and exclusive beat store.</p>
+    </div>
+  </section>
+
+  <!-- Service Tiers -->
+  <section class="service-tiers container">
+    <h3>Photography Packages</h3>
+    <div class="tiers-grid">
+      <div class="tier-card">
+        <h4>Basic</h4>
+        <ul>
+          <li>1 Hour Session</li>
+          <li>10 Edited Photos</li>
+          <li>Online Gallery</li>
+        </ul>
+        <div class="tier-price">$150</div>
+      </div>
+      <div class="tier-card">
+        <h4>Standard</h4>
+        <ul>
+          <li>2 Hour Session</li>
+          <li>25 Edited Photos</li>
+          <li>Online Gallery</li>
+          <li>Print Release</li>
+        </ul>
+        <div class="tier-price">$275</div>
+      </div>
+      <div class="tier-card">
+        <h4>Premium</h4>
+        <ul>
+          <li>4 Hour Session</li>
+          <li>50+ Edited Photos</li>
+          <li>Online Gallery</li>
+          <li>Print Release</li>
+          <li>Priority Editing</li>
+        </ul>
+        <div class="tier-price">$500</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Studio Time & Music Services -->
+  <section class="studio-music container">
+    <div class="studio-service">
+      <h3>Studio Time</h3>
+      <p>Book our professional studio for your next project.</p>
+      <div class="studio-rate">Mix & Mastering: <span>$25/HR</span></div>
+    </div>
+    <div class="music-beats">
+      <h3>Music Beats Store</h3>
+      <p>Preview and purchase exclusive beats for your next track.</p>
+      <div class="beat-store" id="beat-store">
+        <div class="beat-item">
+          <p>Beat 1</p>
+          <audio controls>
+            <source src="beats/beat1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="beat-item">
+          <p>Beat 2</p>
+          <audio controls>
+            <source src="beats/beat2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="beat-item">
+          <p>Beat 3</p>
+          <audio controls>
+            <source src="beats/beat3.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to book your session or studio time?</h2>
+      <a href="booking.html" class="btn">Book Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer">
+      <div class="footer-about">
+        <h3>Helleaux<span>Labs</span></h3>
+        <p>Professional photography services capturing life's most memorable moments with artistic precision and technical excellence.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="booking.html">Booking</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Info</h4>
+        <p>123 Photography Lane<br>Creative District, NY 10001</p>
+        <p>(123) 456-7890</p>
+        <p>info@helleauxlabs.com</p>
+      </div>
+    </div>
+    <div class="container copyright">
+      <p>&copy; 2025 Helleaux Labs. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    // Dynamically load beats from the beats folder (client-side demo)
+    const beats = [
+      { title: "Urban Vibes", file: "beats/urban-vibes.mp3", price: 49 },
+      { title: "Chill Sunset", file: "beats/chill-sunset.mp3", price: 39 },
+      { title: "Trap Energy", file: "beats/trap-energy.mp3", price: 59 }
+    ];
+    const beatStore = document.getElementById('beat-store');
+    if (beatStore) {
+      beats.forEach(beat => {
+        const item = document.createElement('div');
+        item.className = 'beat-item';
+        item.innerHTML = `<span class='beat-title'>"${beat.title}"</span><audio controls src='${beat.file}'></audio><button class='btn primary'>Buy $${beat.price}</button>`;
+        beatStore.appendChild(item);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://helleauxlabs.com/sitemap.xml
+
+# Disallow crawling of placeholder directories
+Disallow: /beats/
+Disallow: /images/.keep
+Disallow: /beats/.keep
